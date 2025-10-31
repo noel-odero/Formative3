@@ -81,7 +81,9 @@ This code manages the iterative process, which includes three main steps in each
 2. Gradient Calculation: Computing the partial derivatives ($\frac{\partial J}{\partial \theta_0}$ and $\frac{\partial J}{\partial \theta_1}$) by calculating the mean of the errors (weighted by $x$ for $\theta_1$).
 3. Parameter Update: Simultaneously updating both $\theta_0$ and $\theta_1$ using the formula:
 
-$$\theta_j := \theta_j - \alpha \frac{\partial J}{\partial \theta_j}$$where $\alpha$ is the defined Learning Rate.
+$$\theta_j := \theta_j - \alpha \frac{\partial J}{\partial \theta_j}$$
+
+where $\alpha$ is the defined Learning Rate.
 
 ### 4.2 Visualizations
 [Two plots: parameters over iterations, error over iterations]
@@ -90,7 +92,7 @@ $$\theta_j := \theta_j - \alpha \frac{\partial J}{\partial \theta_j}$$where $\al
 
 ### 4.3 Verification
 [Compare with manual calculations]
-
+The final optimized parameters obtained from the implemented Gradient Descent code (the converged $\theta_0$ and $\theta_1$ values) were used to calculate the final minimum loss. This result was compared against the manual step-by-step calculations from Part 3 to verify the algorithmic correctness and ensure the implementation successfully minimized the Mean Squared Error (MSE) loss function.
 ---
 
 ## Conclusions
@@ -115,5 +117,4 @@ Part 3: Manual Calculations
 [etc.]
 
 Part 4: Gradient Descent Code
-- Member A: [specific functions/visualizations]
-- Member B: [specific functions/visualizations]
+- Member A: Josephine Duba Kanu Implemented and verified the Batch Gradient Descent algorithm for the Linear Regression model. My tasks included coding the iterative parameter updates, calculating the loss and gradient in each step, and creating the key visualizations showing cost minimization and parameter convergence.
