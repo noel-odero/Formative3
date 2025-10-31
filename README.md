@@ -75,10 +75,18 @@ We calculated: P(Positive | keyword)
 ## Part 4: Gradient Descent Implementation
 
 ### 4.1 Code Implementation
-[Import and demonstrate your modular code]
+We implemented a core function (or class) to execute Batch Gradient Descent for our Linear Regression model ($h_\theta(x) = \theta_0 + \theta_1 x$).
+This code manages the iterative process, which includes three main steps in each cycle:
+1. Hypothesis Calculation: Generating predictions ($h_\theta(x)$) using the current $\theta_0$ and $\theta_1$ values.
+2. Gradient Calculation: Computing the partial derivatives ($\frac{\partial J}{\partial \theta_0}$ and $\frac{\partial J}{\partial \theta_1}$) by calculating the mean of the errors (weighted by $x$ for $\theta_1$).
+3. Parameter Update: Simultaneously updating both $\theta_0$ and $\theta_1$ using the formula:
+
+$$\theta_j := \theta_j - \alpha \frac{\partial J}{\partial \theta_j}$$where $\alpha$ is the defined Learning Rate.
 
 ### 4.2 Visualizations
 [Two plots: parameters over iterations, error over iterations]
+1. Error Over Iterations: This plot shows the value of the Cost Function ($J$) decreasing with each iteration. This confirms that the Gradient Descent algorithm is successfully optimizing the parameters and moving the model toward the local minimum.
+2. Parameters Over Iterations: This plot tracks the specific path that the $\theta_0$ and $\theta_1$ parameters take during training, illustrating their gradual convergence to their optimal final values.
 
 ### 4.3 Verification
 [Compare with manual calculations]
