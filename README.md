@@ -92,6 +92,7 @@ where $\alpha$ is the defined Learning Rate.
 
 ### 4.3 Verification
 [Compare with manual calculations]
+
 The final optimized parameters obtained from the implemented Gradient Descent code (the converged $\theta_0$ and $\theta_1$ values) were used to calculate the final minimum loss. This result was compared against the manual step-by-step calculations from Part 3 to verify the algorithmic correctness and ensure the implementation successfully minimized the Mean Squared Error (MSE) loss function.
 ---
 
