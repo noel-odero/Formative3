@@ -48,6 +48,9 @@ Implementation of Bayes’ Theorem and demonstration with example values.
 
 We showed how posterior probability changes based on prior + evidence likelihood and illustrated the difference between P(A|B) and P(B|A).
 
+This implementation shows how Bayes’ Theorem bridges statistics and natural language processing (NLP).
+By quantifying the relationship between keywords and sentiment, we gain interpretable, data-driven insights into how language patterns reflect human opinions
+
 
 ---
 
